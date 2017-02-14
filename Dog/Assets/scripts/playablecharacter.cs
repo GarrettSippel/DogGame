@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playablecharacter : MonoBehaviour {
 
-    public int hungers = 100;
+    public int hunger = 10;
 
     public Rigidbody rb;
     public float speed = 200f;
@@ -23,7 +23,7 @@ public class playablecharacter : MonoBehaviour {
 }
     void FixedUpdate ()
     {
-        print("Hunger: " + hungers);
+        print("Hunger: " + hunger);
         nose = rb.transform.rotation.eulerAngles;
         
         xMov = -(Mathf.Sin((Mathf.PI) * ((nose.z)) / 180));
