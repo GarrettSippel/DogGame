@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playablecharacter : MonoBehaviour {
-    public int hungerv = 1000;
+
+    public int hungers = 100;
+
     public Rigidbody rb;
     public float speed = 200f;
     public float rotateSpeed = 5f;
