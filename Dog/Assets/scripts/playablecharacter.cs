@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playablecharacter : MonoBehaviour {
 
-    public int hunger = 1000;
+    public int hunger = 10;
 
     public Rigidbody rb;
     public float speed = 200f;
