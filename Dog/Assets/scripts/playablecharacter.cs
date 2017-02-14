@@ -23,13 +23,13 @@ public class playablecharacter : MonoBehaviour {
 }
     void FixedUpdate ()
     {
-        print("Hunger: " + hunger);
+        print("Hunger: " + hungers);
         nose = rb.transform.rotation.eulerAngles;
         
         xMov = -(Mathf.Sin((Mathf.PI) * ((nose.z)) / 180));
         yMov = Mathf.Cos((Mathf.PI)*((nose.z)) /180);
 
-        rotateInput = rotateInput + ((Input.GetAxis("Horizontal") * rotateSpeed));
+        rotateInput = rotateInput + (-(Input.GetAxis("Horizontal") * rotateSpeed));
         Quaternion rotate = Quaternion.Euler(0.0f,0.0f, rotateInput);
         float moveForward = Input.GetAxis("Vertical")*speed;
         Vector3 movement = new Vector3(xMov*moveForward, yMov*moveForward, 0.0f);
