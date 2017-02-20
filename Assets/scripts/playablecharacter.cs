@@ -21,7 +21,7 @@ public class playablecharacter : MonoBehaviour {
 }
     void FixedUpdate ()
     {
-        print("Hunger: " + hunger);
+        //print("Hunger: " + hunger);
         nose = rb.transform.rotation.eulerAngles;
         
         xMov = -(Mathf.Sin((Mathf.PI) * ((nose.z)) / 180));
